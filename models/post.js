@@ -19,20 +19,19 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         len: [1]
       },
-      appartment: {
+      apartment: {
         type: DataTypes.STRING,
         allowNull: true,
-        len: [1]
       },
       city: {
         type: DataTypes.STRING,
         allowNull: false,
-        len: [30]
+        len: [1]
       },
       state: {
         type: DataTypes.STRING,
         allowNull: false,
-        len: [30]
+        len: [1]
       },
       zipcode: {
         type: DataTypes.STRING,

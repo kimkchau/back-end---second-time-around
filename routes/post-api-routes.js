@@ -46,9 +46,12 @@ module.exports = function(app) {
 
   // POST route for saving a new post
   app.post("/api/posts", function(req, res) {
+    console.log(req.body);
     db.Post.create(req.body).then(function(dbPost) {
       res.json(dbPost);
     });
+    // var newPost = req.body;
+    // console.log(newPost);
   });
 
   // DELETE route for deleting posts
